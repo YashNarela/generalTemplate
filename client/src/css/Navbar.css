@@ -1,0 +1,126 @@
+.header{
+
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2PX solid rgba(255, 255, 255, 0.2);
+    z-index: 100;
+    }
+    .header::before{
+        /* content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(218, 208, 208, 0.5);
+        transition: .5s; /
+    
+    }
+    .header:hover::before{
+        / left: 100%; */
+    
+    }
+    
+    .menu-icon{
+        font-size: 36px     ;
+        display: none;
+    
+    }
+    
+    .logo{
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: default;
+    
+    }
+    
+    .navbar{
+    
+    }
+    
+    .navbar .nav-link{
+    
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition:.3s
+    }
+    
+    .navbar .nav-link:hover{
+        color: #ff0000;
+    
+    }
+    
+    @media screen and (max-width: 992px){
+    .header{
+    
+    padding: 1.25rem 4%;
+    
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+     
+        .menu-icon{
+            display: block;
+    
+        }
+    
+    .navbar{
+        position: fixed  !important;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: .5rem 4%;
+        display: block !important;
+    
+        background: rgba(255, 255, 255, 0.1);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    
+        backdrop-filter: blur(10px);
+        display: none !important;
+    
+    
+    }
+    
+     .navbar.active{
+        display: block !important;
+     }
+    
+    
+    .navbar .nav-link{
+        
+    
+    
+        display: block;
+    margin: 1.5rem 0;
+    
+        }
+    
+    .nav-bg{
+        position: fixed;
+        top: 11.8%;
+        left: 0;
+        width: 100%;
+        height: 295px;
+        backdrop-filter: blur(10px);
+        z-index: 99;
+        display: none;
+    }
+    
+    .nav-bg.active{
+        display: block;
+    }
+    }

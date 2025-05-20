@@ -10,7 +10,7 @@ import Login from './Pages/Login';
 import Logout from './Pages/Logout';
 import Slice from './Pages/Slice';
 import SideBar from './Components/admin/SideBar';
-
+import TopNavbar from './Components/Navbar';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,7 +22,7 @@ function App() {
 
         <Routes>
 
-          <Route path='/' element={<SideBar/>}>
+          <Route path='/' element={<Layout/>}>
 
             <Route index element={<Home />} />
             <Route path='home' element={<Home />} />
