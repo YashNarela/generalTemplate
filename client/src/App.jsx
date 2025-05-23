@@ -11,6 +11,7 @@ import Logout from './Pages/Logout';
 import Slice from './Pages/Slice';
 import SideBar from './Components/admin/SideBar';
 import TopNavbar from './Components/Navbar';
+import CardGui from './Pages/CardGui';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,16 +23,16 @@ function App() {
 
         <Routes>
 
-          <Route path='/' element={<Layout/>}>
+          <Route path='/' element={<CardGui/>}>
 
-            <Route index element={<Home />} />
+            {/* <Route index element={<Home />} />
             <Route path='home' element={<Home />} />
             <Route path='insert' element={<Insert />} />
             <Route path='display' element={<Display />} />
             <Route path='login' element={<Login />} />
             <Route path='logout' element={<Logout />} />
          
-            <Route path='/slice' element={<Slice />} />
+            <Route path='/slice' element={<Slice />} /> */}
 
 
           </Route>

@@ -2,7 +2,24 @@ const express = require("express");
 
 const route = express.Router();
 
-const {} = require("../controllers/controllers");
+const { createAuthor, createBook } = require("../controllers/controllers");
+
+const {
+  createWallet,
+  getWallet,
+  addMoneyToWallet,
+} = require("../controllers/Wallet");
+route.post("/createauthor", createAuthor);
+
+route.post("/createbook", createBook);
+
+
+route.post("/createwallet", createWallet);
+
+route.get("/getwallet", getWallet);
+
+route.post("/addmoney", addMoneyToWallet);
+
 
 
 
